@@ -1,0 +1,12 @@
+{
+  "name": "create-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
