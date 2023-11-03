@@ -1,16 +1,8 @@
 const http = require("http");
-const routes = require("./routes");
+const express = require("express");
 
-console.log(routes.someText);
-console.log(routes.handler);
+const app = express();
 
-// function rqListener(req, res) {}
-// http.createServer(function rqListener(req, res) {});
-// http.createServer(function (req, res) {});
-// const server = http.createServer((req, res) => {
-//   //   console.log(req.url, req.method, req.headers);
-// });
-const server = http.createServer(routes.handler);
-//   console.log(req.url, req.method, req.headers);
+const server = http.createServer(app);
 
 server.listen(3000);
