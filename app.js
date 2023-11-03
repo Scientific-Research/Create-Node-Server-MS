@@ -20,7 +20,7 @@ app.post("/product", (req, res, next) => {
   res.redirect("/");
 });
 
-app.use("/", (req, res, next) => {
+app.get("/", (req, res, next) => {
   res.send("<h1>Hello from Express!</h1>");
 });
 
